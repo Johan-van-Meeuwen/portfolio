@@ -1,0 +1,142 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-block: 20px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+nav a {
+  font-weight: 200;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  padding-inline: 60px;
+}
+
+nav a:focus {
+  font-weight: 500;
+  color: #08D9D6;
+}
+
+main {
+  height: 100vh;;
+}
+
+.main-image-container {
+  position: absolute;
+  height: 585px;
+  width: 407px;
+  bottom: 0;
+  z-index: -1;
+}
+
+.main-image {
+  position: absolute;
+  height: 585px;
+  width: 407px;
+  z-index: -2;
+}
+
+.green-blur {
+  position: absolute;
+  background: radial-gradient(83.66% 80.63% at 50% 50%, rgba(8, 217, 214, 0.2) 0%, rgba(23, 21, 21, 0.2) 56.77%);
+  width: 600px;
+  height: 600px;
+  max-width: 600px;
+  max-height: 600px;
+  z-index: -2;
+  bottom: 0;
+}
+
+.orange-blur {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  max-width: 600px;
+  max-height: 600px;
+  background: radial-gradient(103.66% 65.63% at 50% 50%, rgba(240, 165, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 51.04%);
+  z-index: -2;
+  bottom: -100px;
+  right: -200px;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: flex-end;
+  text-align: center;
+  gap: 40px;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+
+.main-text h1 {
+  font-weight: 800;
+  font-size: 80px;
+  color: #F1A661;
+  margin: 0;
+}
+
+.main-text p {
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  width: 380px;
+}
+
+.scroll-button {
+  position: relative;
+  height: 60px;
+  width: 40px;
+  margin-top: 210px;
+  margin-bottom: 40px;
+}
+
+.scroll-button i {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 30px;
+  position: absolute;
+}
+
+.transform-active {
+  top: 30px;
+  color: black;
+  animation: slidedown 0.5s ease;
+}
+
+@keyframes slidedown {
+  from {
+    top: 0px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  to {
+    top: 100px;
+    color: black;
+  }
+}
+
+#next-section {
+  color: white;
+  height: 100vh;
+}
