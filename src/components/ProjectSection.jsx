@@ -8,7 +8,13 @@ export default function ProjectSection() {
   return (
     <main>
       <ProjectsBackground />
-      <h2 id="projects">Projects</h2>
+      <div className="projects-text">
+        <h2 id="projects">Projects</h2>
+        <p>
+          Here are a couple of apps I designed and built as part of an awesome team during
+          my time at Le Wagon (Apr – Jun 2022)
+        </p>
+      </div>
       <div className="projects-container">
         <Project
           projectDate = "June 2022"
