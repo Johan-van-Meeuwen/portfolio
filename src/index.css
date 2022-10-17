@@ -147,6 +147,12 @@ main {
   padding-top: 32px;
 }
 
+.bolded-text {
+  font-weight: 900;
+  color: rgb(8, 217, 214);
+
+}
+
 .projects-text > p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;

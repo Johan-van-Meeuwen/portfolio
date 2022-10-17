@@ -11,7 +11,7 @@ export default function ProjectSection() {
       <div className="projects-text">
         <h2 id="projects">Projects</h2>
         <p>
-          Here are a couple of apps I designed and built as part of an awesome team during
+          Here are a couple of apps I designed and built as part of an <span className="bolded-text">awesome team</span> during
           my time at Le Wagon (Apr – Jun 2022)
         </p>
       </div>
