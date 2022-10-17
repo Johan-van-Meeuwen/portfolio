@@ -55,7 +55,7 @@ main {
 
 .green-blur {
   position: absolute;
-  background: radial-gradient(83.66% 80.63% at 50% 50%, rgba(8, 217, 214, 0.2) 0%, rgba(23, 21, 21, 0.2) 56.77%);
+  background: radial-gradient(93.66% 87.63% at 47% 53%, rgba(8, 217, 214, 0.75) 0%, rgba(23, 21, 21, 0) 53.65%);
   width: 600px;
   height: 600px;
   max-width: 600px;
@@ -66,14 +66,13 @@ main {
 
 .orange-blur {
   position: absolute;
+  background: radial-gradient(93.66% 87.63% at 10% 50%, rgba(241, 166, 97, 0.8) 0%, rgba(23, 21, 21, 0.256) 55.83%);
   width: 600px;
   height: 600px;
   max-width: 600px;
   max-height: 600px;
-  background: radial-gradient(103.66% 65.63% at 50% 50%, rgba(240, 165, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 51.04%);
   z-index: -2;
-  bottom: -100px;
-  right: -200px;
+  bottom: 0;
 }
 
 .main-text {
@@ -136,7 +135,90 @@ main {
   }
 }
 
-#next-section {
-  color: white;
-  height: 100vh;
+/* ProjectSection component CSS below */
+
+#projects {
+  color: #F1A661;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 150%;
+  margin: 0;
+  text-align: center;
+  padding-top: 48px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding-block: 2rem;
+}
+
+/* Project component CSS below */
+
+.project-card {
+  position: relative;
+
+}
+
+.project-card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  max-width: 480px;
+  height: 540px;
+  border-radius: 24px;
+  border: 2px solid transparent;
+  background: linear-gradient(144.67deg, #F0A466 0.04%, #08D9D6 50.52%, #FFA9A9 100%) border-box;
+  -webkit-mask:
+     linear-gradient(#fff 0 0) padding-box,
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+     mask-composite: exclude;
+}
+
+.project-title {
+  color: #FFFFFFB2;
+}
+
+.date-badge {
+  position: absolute;
+}
+
+.project-image {
+  max-width: 484px;
+  border-radius: 24px 24px 0px 0px;
+}
+
+.project-info {
+  display: grid;
+  grid-template-columns: 50px 280px;
+  grid-template-rows: min-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-info p {
+  color: #FFFFFFB2;
+  font-size: 1rem;
+  margin-block: 0.5rem;
+}
+
+.project-info i {
+  color: #FFFFFFB2;
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.project-title {
+  font-size: 36px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  margin: 0;
+  padding-block: 0.5rem;
+}
+
+.project-button {
+
 }
