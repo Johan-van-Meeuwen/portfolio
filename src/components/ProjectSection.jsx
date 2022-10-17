@@ -1,9 +1,11 @@
 import React from "react"
 import Project from '/src/components/Project'
+import ProjectsBackground from '/src/components/ProjectsBackground'
 
 export default function ProjectSection() {
   return (
     <main>
+      <ProjectsBackground />
       <h2 id="projects">Projects</h2>
       <div className="projects-container">
         <Project
