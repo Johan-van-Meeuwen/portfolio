@@ -24,7 +24,7 @@ export default function Main() {
           bootcamp in the spring of 2022.
         </p>
       <div className="scroll-button">
-        <a href="#next-section"><i id="down-arrow" className="fa-solid fa-angle-down" onClick={arrowDown} /></a>
+        <a href="#projects"><i id="down-arrow" className="fa-solid fa-angle-down" onClick={arrowDown} /></a>
       </div>
       </div>
       <div className="orange-blur"></div>
