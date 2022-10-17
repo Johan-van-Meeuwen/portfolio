@@ -151,22 +151,28 @@ main {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  padding-block: 2rem;
+  padding-block: 3.5rem;
 }
 
 /* Project component CSS below */
 
+.project-card-shadow {
+  box-shadow: 0px 0px 12px #FFFFFF;
+  border-radius: 24px;
+  max-width: 434px;
+  height: 524px;
+}
+
 .project-card {
   position: relative;
-
 }
 
 .project-card:before {
   content: "";
   position: absolute;
   inset: 0;
-  max-width: 480px;
-  height: 540px;
+  max-width: 430px;
+  height: 520px;
   border-radius: 24px;
   border: 2px solid transparent;
   background: linear-gradient(144.67deg, #F0A466 0.04%, #08D9D6 50.52%, #FFA9A9 100%) border-box;
@@ -183,10 +189,21 @@ main {
 
 .date-badge {
   position: absolute;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #08D9D6;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #FFFFFFB2;
+  right: 50px;
+  top: -39px;
+  background-color: #000;
 }
 
 .project-image {
-  max-width: 484px;
+  max-width: 434px;
   border-radius: 24px 24px 0px 0px;
 }
 
@@ -220,5 +237,28 @@ main {
 }
 
 .project-button {
+  position: absolute;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%, 87%);
+  background-color: #000;
+  text-align: center;
+  padding: 13px 35px 13px 35px;
+}
 
+.project-button:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background: linear-gradient(144.67deg, #F0A466 0.04%, #08D9D6 50.52%, #FFA9A9 100%) border-box;
+  -webkit-mask:
+     linear-gradient(#fff 0 0) padding-box,
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+     mask-composite: exclude;
 }
