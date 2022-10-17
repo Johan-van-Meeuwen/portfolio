@@ -48,8 +48,8 @@ main {
 
 .main-image {
   position: absolute;
-  height: 585px;
-  width: 407px;
+  max-height: 585px;
+  max-width: 407px;
   z-index: -2;
 }
 
@@ -144,7 +144,15 @@ main {
   line-height: 150%;
   margin: 0;
   text-align: center;
-  padding-top: 48px;
+  padding-top: 32px;
+}
+
+.projects-text > p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  text-align: center;
+  width: 480px;
+  margin: 4px auto;
 }
 
 .projects-container {
@@ -152,6 +160,15 @@ main {
   justify-content: center;
   gap: 5rem;
   padding-block: 3.5rem;
+}
+
+@media (max-width: 992px) {
+  .projects-container {
+    display: grid;
+    justify-content: center;
+    gap: 5rem;
+    padding-block: 3.5rem;
+  }
 }
 
 /* Project component CSS below */
