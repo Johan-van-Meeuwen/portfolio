@@ -1,4 +1,5 @@
 import Reach from "react"
+import headshotImgUrl from '/src/assets/main_headshot.png'
 
 export default function Main() {
 
@@ -13,7 +14,7 @@ export default function Main() {
   return (
     <main>
       <div className="main-image-container">
-        <img src="public/assets/main_headshot.png" alt="johan" className="main-image"/>
+        <img src={headshotImgUrl} alt="johan" className="main-image"/>
       </div>
       <div className="green-blur"></div>
       <div className="main-text">
