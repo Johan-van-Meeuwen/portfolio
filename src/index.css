@@ -35,7 +35,7 @@ nav a:focus {
 }
 
 main {
-  height: 100vh;
+  height: 100%;
 }
 
 .main-image-container {
@@ -109,6 +109,7 @@ main {
   width: 40px;
   margin-top: 210px;
   margin-bottom: 40px;
+  margin-inline: auto;
 }
 
 .scroll-button i {
@@ -332,4 +333,30 @@ main {
   z-index: -1;
   right: 0px;
   top: 0px;
+}
+
+.scroll-button-skills {
+  position: relative;
+  height: 60px;
+  width: 40px;
+  margin-top: -50px;
+  margin-bottom: 100px;
+  margin-inline: auto;
+}
+
+.scroll-button-skills i {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 30px;
+  position: absolute;
+}
+
+/* Skills section below */
+
+#skills {
+  color: #F1A661;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 150%;
+  margin: 0;
+  text-align: center;
 }

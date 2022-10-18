@@ -8,7 +8,7 @@ export default function Main() {
     setTimeout(() => {
       const downArrow = document.getElementById('down-arrow')
       downArrow.classList.remove('transform-active')
-    }, 1000);
+    }, 500);
   }
 
   return (

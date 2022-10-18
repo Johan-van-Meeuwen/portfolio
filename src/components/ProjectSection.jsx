@@ -5,6 +5,15 @@ import devderImgUrl from '/src/assets/devder_image.png'
 import rentamonImgUrl from '/src/assets/rent-a-mon_image.png'
 
 export default function ProjectSection() {
+
+  const arrowDown = () => {
+    event.target.classList.add('transform-active');
+    setTimeout(() => {
+      const downArrow = document.getElementById('down-arrow')
+      downArrow.classList.remove('transform-active')
+    }, 500);
+  }
+
   return (
     <main>
       <ProjectsBackground />
@@ -34,6 +43,9 @@ export default function ProjectSection() {
           projectDuration = "1 week"
           projectUrl = "https://rent-a-mon.herokuapp.com/"
         />
+      </div>
+      <div className="scroll-button-skills">
+        <a href="#skills"><i id="down-arrow" className="fa-solid fa-angle-down" onClick={arrowDown} /></a>
       </div>
     </main>
   )
