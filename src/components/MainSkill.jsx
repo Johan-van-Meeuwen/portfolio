@@ -1,11 +1,12 @@
 import React from "react"
+// import SkillSection from "/src/components/SkillSection.jsx";
 
 export default function MainSkill(props) {
 
   const [isHighlighted, setIsHighlighted] = React.useState(false)
 
   const changeColor = () => {
-    return setIsHighlighted(prevState => !prevState)
+    setIsHighlighted(prevState => !prevState)
   }
 
   return (

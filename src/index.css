@@ -383,18 +383,10 @@ main {
   gap: 2rem;
 }
 
-@media (max-width: 1200px) {
-
-}
-
 @media (max-width: 992px) {
   .main-skills {
     grid-template-columns: repeat(2, 2fr);
   }
-}
-
-@media (max-width: 768px) {
-
 }
 
 @media (max-width: 576px) {
@@ -407,17 +399,24 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
-  background-color: rgba(39, 36, 36, 1);
+  padding-inline: 15rem;
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .secondary-skills {
+    grid-template-columns: repeat(2, 3fr);
+    padding-inline: 8rem;
+  }
 }
 
 .tools-skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
-  background-color: rgba(39, 36, 36, 1);
 }
 
-/* Skill cards below */
+/* Main skill cards below */
 
 .main-skill-card {
   display: flex;
@@ -445,18 +444,66 @@ main {
   width: 200px;
 }
 
-.html-hover-class {
+.html-hover {
   filter: invert(34%) sepia(85%) saturate(3524%) hue-rotate(355deg) brightness(100%) contrast(78%);
 }
 
-.css-hover-class {
+.css-hover {
   filter: invert(35%) sepia(89%) saturate(858%) hue-rotate(172deg) brightness(87%) contrast(89%);
 }
 
-.js-hover-class {
+.js-hover {
   filter: invert(88%) sepia(64%) saturate(3349%) hue-rotate(336deg) brightness(97%) contrast(101%);
 }
 
-.react-hover-class {
+.react-hover {
   filter: invert(75%) sepia(52%) saturate(1636%) hue-rotate(168deg) brightness(107%) contrast(97%);
+}
+
+/* Other skill cards below */
+
+.other-skill-card {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  background-color: #272424;
+  font-size: 36px;
+  padding-top: 0.5rem;
+}
+
+.other-skill-card h3 {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding-block: 8px;
+}
+
+.other-skill-card img {
+  width: 80px;
+}
+
+.rails-hover {
+  filter: invert(9%) sepia(85%) saturate(6771%) hue-rotate(10deg) brightness(100%) contrast(117%);
+}
+
+.ruby-hover {
+  filter: invert(31%) sepia(72%) saturate(3562%) hue-rotate(343deg) brightness(83%) contrast(92%);
+}
+
+.psql-hover {
+  filter: invert(36%) sepia(89%) saturate(2839%) hue-rotate(215deg) brightness(94%) contrast(88%);
+}
+
+.sql-hover {
+  filter: invert(41%) sepia(45%) saturate(474%) hue-rotate(163deg) brightness(97%) contrast(97%);
+}
+
+.redis-hover {
+  filter: invert(27%) sepia(66%) saturate(2611%) hue-rotate(345deg) brightness(90%) contrast(91%);
 }
