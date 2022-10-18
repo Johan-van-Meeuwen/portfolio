@@ -29,6 +29,12 @@ nav a {
   padding-inline: 60px;
 }
 
+@media (max-width: 768px) {
+  nav a {
+    padding-inline: 30px;
+  }
+}
+
 nav a:focus {
   font-weight: 500;
   color: #08D9D6;
@@ -47,10 +53,15 @@ main {
 }
 
 .main-image {
-  position: absolute;
   max-height: 585px;
   max-width: 407px;
   z-index: -2;
+}
+
+@media (max-width: 992px) {
+  .main-image {
+    opacity: 0.6;
+  }
 }
 
 .green-blur {
@@ -84,7 +95,6 @@ main {
   gap: 40px;
   height: 90vh;
   width: 100vw;
-  align-items: center;
 }
 
 .main-text h1 {
@@ -101,6 +111,7 @@ main {
   color: rgba(255, 255, 255, 0.7);
   margin: 0;
   width: 380px;
+  align-self: center;
 }
 
 .scroll-button {
@@ -210,6 +221,20 @@ main {
      mask-composite: exclude;
 }
 
+/* @media (max-width: 576px) {
+  .project-card {
+    width: 400px;
+  }
+
+  .project-image {
+    width: 400px;
+  }
+
+  .project-button {
+    transform: translate(-50%, 120%);
+  }
+} */
+
 .project-title {
   color: #FFFFFFB2;
 }
@@ -251,7 +276,7 @@ main {
 .project-info i {
   color: #FFFFFFB2;
   font-size: 1.5rem;
-  text-align: start;
+  text-align: center;
 }
 
 .project-title {

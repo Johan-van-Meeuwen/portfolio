@@ -13,11 +13,11 @@ export default function Main() {
 
   return (
     <main>
-      <div className="main-image-container">
-        <img src={headshotImgUrl} alt="johan" className="main-image"/>
-      </div>
       <div className="green-blur blur"></div>
       <div className="main-text">
+        <div className="main-image-container">
+          <img src={headshotImgUrl} alt="johan" className="main-image"/>
+        </div>
         <h1>Hi, I'm Johan</h1>
         <p>
           I’m a skilled frontend engineer who graduated
