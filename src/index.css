@@ -116,6 +116,7 @@ main {
   color: rgba(255, 255, 255, 0.7);
   font-size: 30px;
   position: absolute;
+  padding-left: 4px;
 }
 
 .transform-active {
@@ -160,6 +161,7 @@ main {
   text-align: center;
   width: 480px;
   margin: 4px auto;
+  font-weight: 200;
 }
 
 .projects-container {
@@ -190,6 +192,7 @@ main {
 
 .project-card {
   position: relative;
+  font-weight: 200;
 }
 
 .project-card:before {
@@ -339,7 +342,7 @@ main {
   position: relative;
   height: 60px;
   width: 40px;
-  margin-top: -50px;
+  margin-top: -30px;
   margin-bottom: 100px;
   margin-inline: auto;
 }
@@ -348,6 +351,7 @@ main {
   color: rgba(255, 255, 255, 0.7);
   font-size: 30px;
   position: absolute;
+  padding-left: 4px;
 }
 
 /* Skills section below */
@@ -359,4 +363,100 @@ main {
   line-height: 150%;
   margin: 0;
   text-align: center;
+}
+
+.skills-section p {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 200;
+  text-align: center;
+  padding-block: 70px;
+  margin: 0;
+}
+
+/* Skills grids below */
+
+.main-skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding-inline: 5rem;
+  gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+  .main-skills {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+  .main-skills {
+    grid-template-columns: repeat(1, 4fr);
+  }
+}
+
+.secondary-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  background-color: rgba(39, 36, 36, 1);
+}
+
+.tools-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  background-color: rgba(39, 36, 36, 1);
+}
+
+/* Skill cards below */
+
+.main-skill-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: #272424;
+  font-size: 36px;
+  padding-block: 1rem;
+}
+
+.main-skill-card h3 {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding-block: 8px;
+}
+
+.main-skill-card img {
+  width: 200px;
+}
+
+.html-hover-class {
+  filter: invert(34%) sepia(85%) saturate(3524%) hue-rotate(355deg) brightness(100%) contrast(78%);
+}
+
+.css-hover-class {
+  filter: invert(35%) sepia(89%) saturate(858%) hue-rotate(172deg) brightness(87%) contrast(89%);
+}
+
+.js-hover-class {
+  filter: invert(88%) sepia(64%) saturate(3349%) hue-rotate(336deg) brightness(97%) contrast(101%);
+}
+
+.react-hover-class {
+  filter: invert(75%) sepia(52%) saturate(1636%) hue-rotate(168deg) brightness(107%) contrast(97%);
 }
