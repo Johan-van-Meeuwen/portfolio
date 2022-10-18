@@ -14,7 +14,7 @@ body {
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding-block: 20px;
   position: absolute;
   z-index: 1;
@@ -79,10 +79,10 @@ main {
   display: flex;
   flex-direction: column;
   align-self: center;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: center;
   gap: 40px;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   align-items: center;
 }
@@ -107,7 +107,6 @@ main {
   position: relative;
   height: 60px;
   width: 40px;
-  margin-top: 210px;
   margin-bottom: 40px;
   margin-inline: auto;
 }
@@ -338,6 +337,12 @@ main {
   top: 0px;
 }
 
+@media (max-width: 1200px) {
+  .blur {
+    display: none;
+  }
+}
+
 .scroll-button-skills {
   position: relative;
   height: 60px;
@@ -383,7 +388,7 @@ main {
   gap: 2rem;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .main-skills {
     grid-template-columns: repeat(2, 2fr);
   }
@@ -399,7 +404,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
-  padding-inline: 15rem;
+  padding-inline: 8rem;
   gap: 2rem;
 }
 

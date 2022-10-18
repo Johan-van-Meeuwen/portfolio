@@ -16,7 +16,7 @@ export default function Main() {
       <div className="main-image-container">
         <img src={headshotImgUrl} alt="johan" className="main-image"/>
       </div>
-      <div className="green-blur"></div>
+      <div className="green-blur blur"></div>
       <div className="main-text">
         <h1>Hi, I'm Johan</h1>
         <p>
@@ -24,11 +24,11 @@ export default function Main() {
           from Le Wagon’s full stack web development
           bootcamp in the spring of 2022.
         </p>
+      </div>
       <div className="scroll-button">
         <a href="#projects"><i id="down-arrow" className="fa-solid fa-angle-down" onClick={arrowDown} /></a>
       </div>
-      </div>
-      <div className="orange-blur"></div>
+      <div className="orange-blur blur"></div>
     </main>
   )
 }
