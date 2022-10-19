@@ -4,6 +4,7 @@ import Navbar from '/src/components/Navbar'
 import Main from '/src/components/Main'
 import ProjectSection from '/src/components/ProjectSection'
 import SkillSection from '/src/components/SkillSection'
+import ContactForm from '/src/components/ContactForm'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Main />
       <ProjectSection />
       <SkillSection />
+      <ContactForm />
     </div>
   )
 }
