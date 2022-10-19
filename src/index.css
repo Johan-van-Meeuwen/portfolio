@@ -29,13 +29,19 @@ nav a {
   padding-inline: 60px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 375px) {
+  nav a {
+    padding-inline: 15px;
+  }
+}
+
+@media (min-width: 768px) {
   nav a {
     padding-inline: 30px;
   }
 }
 
-nav a:focus {
+nav a:hover {
   font-weight: 500;
   color: #08D9D6;
 }
@@ -204,13 +210,6 @@ main {
 @media (max-width: 434px) {
   .projects-container {
     gap: 6rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .projects-container {
-    justify-content: end;
-    padding-right: 1px;
   }
 }
 
@@ -765,4 +764,13 @@ textarea {
 
 .success-message-body {
   color: rgba(255, 255, 255, 0.7);
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color:rgba(23, 21, 21);
+  height: 200px;
+  margin-top: 100px;
+  width: 100%;
 }
