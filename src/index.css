@@ -29,6 +29,12 @@ nav a {
   padding-inline: 60px;
 }
 
+@media (min-width: 200px) {
+  nav a {
+    padding-inline: 15px;
+  }
+}
+
 @media (min-width: 375px) {
   nav a {
     padding-inline: 15px;
@@ -189,6 +195,7 @@ main {
   max-width: 480px;
   margin: 4px auto;
   font-weight: 200;
+  padding-inline: 2rem;
 }
 
 .projects-container {
@@ -341,7 +348,46 @@ main {
   width: 100%;
 }
 
-@media (max-width: 434px) {
+@media (min-width: 300px) {
+  .project-card {
+    max-width: 290px;
+  }
+
+  .project-image {
+    max-width: 290px;
+  }
+
+  .project-info > p {
+    font-size: 12px;
+    padding-inline: 3rem;
+  }
+
+  .project-info > i {
+    padding-left: 3rem;
+  }
+
+}
+
+@media (min-width: 375px) {
+  .project-card {
+    max-width: 330px;
+  }
+
+  .project-image {
+    max-width: 330px;
+  }
+
+  .project-info > p {
+    font-size: 16px;
+    padding-inline: 1rem;
+  }
+
+  .project-info > i {
+    padding-inline: 0rem;
+  }
+}
+
+@media (min-width: 434px) {
   .project-card {
     max-width: 360px;
   }
@@ -351,19 +397,15 @@ main {
   }
 }
 
-/* @media (max-width: 576px) {
+@media (min-width: 550px) {
   .project-card {
-    width: 400px;
+    max-width: 434px;
   }
 
   .project-image {
-    width: 400px;
+    max-width: 434px;
   }
-
-  .project-button {
-    transform: translate(-50%, 120%);
-  }
-} */
+}
 
 .projects-pink-blur {
   position: absolute;
@@ -459,7 +501,7 @@ main {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 678px) {
   .main-skills {
     grid-template-columns: repeat(1, 4fr);
   }
