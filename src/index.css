@@ -58,6 +58,16 @@ main {
   z-index: -2;
 }
 
+@media (max-width: 434px) {
+  .main-image-container {
+    max-width: 350px
+  }
+
+  .main-image {
+    max-width: 350px
+  }
+}
+
 @media (max-width: 992px) {
   .main-image {
     opacity: 0.6;
@@ -110,8 +120,9 @@ main {
   line-height: 1.4rem;
   color: rgba(255, 255, 255, 0.7);
   margin: 0;
-  width: 380px;
+  max-width: 380px;
   align-self: center;
+  padding-inline: 2rem;
 }
 
 .scroll-button {
@@ -169,7 +180,7 @@ main {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
   text-align: center;
-  width: 480px;
+  max-width: 480px;
   margin: 4px auto;
   font-weight: 200;
 }
@@ -187,6 +198,19 @@ main {
     justify-content: center;
     gap: 5rem;
     padding-block: 3.5rem;
+  }
+}
+
+@media (max-width: 434px) {
+  .projects-container {
+    gap: 6rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .projects-container {
+    justify-content: end;
+    padding-right: 1px;
   }
 }
 
@@ -220,20 +244,6 @@ main {
   -webkit-mask-composite: xor;
      mask-composite: exclude;
 }
-
-/* @media (max-width: 576px) {
-  .project-card {
-    width: 400px;
-  }
-
-  .project-image {
-    width: 400px;
-  }
-
-  .project-button {
-    transform: translate(-50%, 120%);
-  }
-} */
 
 .project-title {
   color: #FFFFFFB2;
@@ -332,6 +342,30 @@ main {
   width: 100%;
 }
 
+@media (max-width: 434px) {
+  .project-card {
+    max-width: 360px;
+  }
+
+  .project-image {
+    max-width: 360px;
+  }
+}
+
+/* @media (max-width: 576px) {
+  .project-card {
+    width: 400px;
+  }
+
+  .project-image {
+    width: 400px;
+  }
+
+  .project-button {
+    transform: translate(-50%, 120%);
+  }
+} */
+
 .projects-pink-blur {
   position: absolute;
   width: 500px;
@@ -375,6 +409,13 @@ main {
   margin-top: -30px;
   margin-bottom: 100px;
   margin-inline: auto;
+}
+
+@media (max-width: 434px) {
+  .scroll-button-skills {
+    margin-top: 0px;
+    margin-bottom: 70px;
+  }
 }
 
 .scroll-button-skills i {
@@ -425,6 +466,12 @@ main {
   }
 }
 
+@media (max-width: 410px) {
+  .main-skills {
+    padding-inline: 0rem;
+  }
+}
+
 .secondary-skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -440,10 +487,43 @@ main {
   }
 }
 
+@media (max-width: 528px) {
+  .secondary-skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 375px) {
+  .secondary-skills {
+    padding-inline: 0rem;
+  }
+}
+
 .tools-skills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  padding-inline: 24rem;
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .tools-skills {
+    grid-template-columns: repeat(2, 3fr);
+    padding-inline: 8rem;
+  }
+}
+
+@media (max-width: 528px) {
+  .tools-skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 375px) {
+  .tools-skills {
+    padding-inline: 0rem;
+  }
 }
 
 /* Main skill cards below */
@@ -536,4 +616,28 @@ main {
 
 .redis-hover {
   filter: invert(27%) sepia(66%) saturate(2611%) hue-rotate(345deg) brightness(90%) contrast(91%);
+}
+
+.git-hover {
+  filter: invert(39%) sepia(80%) saturate(3016%) hue-rotate(344deg) brightness(99%) contrast(90%);
+}
+
+.github-hover {
+  filter: invert(6%) sepia(6%) saturate(348%) hue-rotate(314deg) brightness(93%) contrast(92%);
+}
+
+.figma-hover {
+  filter: invert(36%) sepia(49%) saturate(3261%) hue-rotate(351deg) brightness(98%) contrast(93%);
+}
+
+.jira-hover {
+  filter: invert(20%) sepia(66%) saturate(3663%) hue-rotate(210deg) brightness(94%) contrast(101%);
+}
+
+.snowflake-hover {
+  filter: invert(60%) sepia(94%) saturate(1384%) hue-rotate(161deg) brightness(96%) contrast(89%);
+}
+
+.trello-hover {
+  filter: invert(23%) sepia(59%) saturate(3375%) hue-rotate(208deg) brightness(89%) contrast(107%);
 }

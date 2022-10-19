@@ -10,6 +10,12 @@ import rubyLogo from "/src/assets/ruby.svg"
 import psqlLogo from "/src/assets/psql.svg"
 import sqlLogo from "/src/assets/sql.svg"
 import redisLogo from "/src/assets/redis.svg"
+import gitLogo from "/src/assets/git.svg"
+import gitHubLogo from "/src/assets/github.svg"
+import figmaLogo from "/src/assets/figma.svg"
+import jiraLogo from "/src/assets/jira.svg"
+import snowflakeLogo from "/src/assets/snowflake.svg"
+import trelloLogo from "/src/assets/trello.svg"
 
 export default function SkillSection() {
 
@@ -77,14 +83,38 @@ export default function SkillSection() {
           />
         </div>
         <p>... and here are some other useful things I know how to use!</p>
-        {/* <div className="tools-skills">
-          <OtherSkill />
-          <OtherSkill />
-          <OtherSkill />
-          <OtherSkill />
-          <OtherSkill />
-          <OtherSkill />
-        </div> */}
+        <div className="tools-skills">
+          <OtherSkill
+            skillIcon = {gitLogo}
+            skillText = "Git"
+            skillHoverClass = "git-hover"
+          />
+          <OtherSkill
+            skillIcon = {gitHubLogo}
+            skillText = "GitHub"
+            skillHoverClass = "github-hover"
+          />
+          <OtherSkill
+            skillIcon = {figmaLogo}
+            skillText = "Figma"
+            skillHoverClass = "figma-hover"
+          />
+          <OtherSkill
+            skillIcon = {jiraLogo}
+            skillText = "Jira"
+            skillHoverClass = "jira-hover"
+          />
+          <OtherSkill
+            skillIcon = {snowflakeLogo}
+            skillText = "Snowflake"
+            skillHoverClass = "snowflake-hover"
+          />
+          <OtherSkill
+            skillIcon = {trelloLogo}
+            skillText = "Trello"
+            skillHoverClass = "trello-hover"
+          />
+        </div>
       </div>
     </main>
   )
