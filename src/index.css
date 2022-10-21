@@ -44,12 +44,6 @@ nav a {
   }
 }
 
-@media (min-width: 768px) {
-  nav a {
-    /* padding-inline: 30px; */
-  }
-}
-
 nav a:hover {
   border-bottom: 5px solid #08D9D6;
 }
@@ -108,7 +102,22 @@ main {
   max-height: 600px;
   z-index: -2;
   bottom: 0;
+  /* animation-name: orange-pulse;
+  animation-timing-function: ;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: both; */
 }
+
+/* @keyframes orange-pulse {
+  from {
+    background: radial-gradient(93.66% 87.63% at 10% 50%, rgba(241, 166, 97, 0.8) 0%, rgba(23, 21, 21, 0.256) 55.83%);
+  }
+
+  to {
+    background: radial-gradient(129.66% 87.63% at 10% 50%, rgba(241, 166, 97, 0.8) 0%, rgba(23, 21, 21, 0.256) 55.83%);
+  }
+} */
 
 .main-text {
   display: flex;
@@ -406,6 +415,32 @@ main {
 
   .project-image {
     max-width: 434px;
+  }
+}
+
+@media (max-width: 550px) {
+  .project-button {
+    font-size: 1.2rem;
+    transform: translate(-50%, 185%);
+  }
+}
+
+@media (max-width: 434px) {
+  .project-button {
+    transform: translate(-50%, 220%);
+  }
+}
+
+@media (max-width: 374px) {
+  .project-button {
+    font-size: 1rem;
+    transform: translate(-50%, 345%);
+  }
+}
+
+@media (max-width: 300px) {
+  .project-button {
+    transform: translate(-50%, 115%)
   }
 }
 

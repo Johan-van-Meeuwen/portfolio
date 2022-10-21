@@ -12,6 +12,7 @@ export default function ContactForm() {
       DYNAMIC_DATA_EXAMPLE: 123,
     };
     const inputs = e.target.elements;
+    console.log(inputs)
     const data = {};
 
     for (let i = 0; i < inputs.length; i++) {
@@ -66,7 +67,7 @@ export default function ContactForm() {
 
   return (
     <main>
-      <h1 id="contact">I'd love to hear from you!</h1>
+      <h1 id="contact">Write to me</h1>
 
         <form
           action={FORM_ENDPOINT}
@@ -76,11 +77,11 @@ export default function ContactForm() {
         >
           <div className="form-name">
             <label htmlFor="name">Your name</label>
-            <input type="text" placeholder="Fellow Frontend Enthusiast" name="name" required />
+            <input type="text" placeholder="Fellow frontend enthusiast" name="name" required />
           </div>
           <div className="form-email">
             <label htmlFor="email">Your email</label>
-            <input type="email" placeholder="Email" name="email" required />
+            <input type="email" placeholder="So I can get back to you" name="email" required />
           </div>
           <div className="form-message">
             <label htmlFor="message">Your message</label>
