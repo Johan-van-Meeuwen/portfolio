@@ -20,9 +20,8 @@ export default function Main() {
         </div>
         <h1>Hi, I'm Johan</h1>
         <p>
-          I’m a frontend engineer who graduated
-          from Le Wagon’s full stack web development
-          bootcamp in the summer of 2022.
+          I'm a recent graduate of <strong><a className="main-text-link" href="https://www.lewagon.com/" target="_blank">Le Wagon's</a></strong> full stack web development bootcamp (June 2022). I currently work
+          as a customer support engineer at <strong><a className="main-text-link" href="https://www.paddle.com/" target="_blank">Paddle</a></strong>.
         </p>
       </div>
       <div className="scroll-button">

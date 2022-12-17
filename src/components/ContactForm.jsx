@@ -67,8 +67,7 @@ export default function ContactForm() {
 
   return (
     <main>
-      <h1 id="contact">Write to me</h1>
-
+      <h1 id="contact">Wanna chat?</h1>
         <form
           action={FORM_ENDPOINT}
           onSubmit={handleSubmit}
