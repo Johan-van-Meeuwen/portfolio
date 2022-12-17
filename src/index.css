@@ -84,7 +84,7 @@ main {
 
 .green-blur {
   position: absolute;
-  background: radial-gradient(93.66% 87.63% at 47% 53%, rgba(8, 217, 214, 0.75) 0%, rgba(23, 21, 21, 0) 53.65%);
+  background: radial-gradient(93.66% 87.63% at 47% 53%, rgba(8, 217, 214, 0.75) 0%, rgba(0, 0, 0, 0) 53.65%);
   width: 600px;
   height: 600px;
   max-width: 600px;
@@ -95,7 +95,7 @@ main {
 
 .orange-blur {
   position: absolute;
-  background: radial-gradient(93.66% 87.63% at 10% 50%, rgba(241, 166, 97, 0.8) 0%, rgba(23, 21, 21, 0.256) 55.83%);
+  background: radial-gradient(93.66% 87.63% at 10% 50%, rgba(241, 166, 97, 0.8) 0%, rgba(0, 0, 0, 0.256) 55.83%);
   width: 600px;
   height: 600px;
   max-width: 600px;
