@@ -22,17 +22,19 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
-      Paddle.Checkout.open({
-        settings: {
-          theme: "dark",
-        },
-        items: [
-          {
-            priceId: 'pri_01h8eyxsyqj3p2acqs32a9ekyr',
-            quantity: 1
-          }
-        ]
-      })
+      function openCheckout() {
+        Paddle.Checkout.open({
+          settings: {
+            theme: "dark",
+          },
+          items: [
+            {
+              priceId: 'pri_01h8eyxsyqj3p2acqs32a9ekyr',
+              quantity: 1
+            }
+          ]
+        })
+      }
     </script>
     <a href="#" onclick="openCheckout()">Test</a>
   </body>
