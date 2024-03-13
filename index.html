@@ -14,7 +14,10 @@
     <script type="text/javascript">
       Paddle.Environment.set('staging');
       Paddle.Setup({
-        vendor: '36674'
+        vendor: '36674',
+        eventCallback: function(data) {
+          console.log(data);
+        }
       });
     </script>
   </head>
