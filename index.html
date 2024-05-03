@@ -14,7 +14,10 @@
     <script type="text/javascript">
       Paddle.Environment.set('staging');
       Paddle.Initialize({
-        token: 'test_db4bf268046340914aee529c043'        
+        token: 'test_db4bf268046340914aee529c043',
+        eventCallback: function(data) {
+          console.log(data)
+        }
       });
     </script>
   </head>
@@ -24,6 +27,9 @@
     <script>
       function openCheckout() {
         Paddle.Checkout.open({
+          settings: {
+            successUrl: "https://johan-van-meeuwen.com"
+          },
           items: [
             {
               priceId: "pri_01hv8w21p0dhmme681345sadwn",
